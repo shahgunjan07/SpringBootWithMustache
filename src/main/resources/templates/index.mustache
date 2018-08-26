@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>{{metaData.title}}</title>
+	</head>
+	<body>
+		{{metaData.welcomeMessage}}
+		
+		<br /> 
+		
+		
+		{{#formRadio}}
+			<h3>{{radioLabel}}</h3>
+		{{/formRadio}}
+			
+		
+		{{#formRadio}}
+			{{#radioOptions}}
+				{{optionValue}}  &nbsp; &nbsp; <input type="radio" name={{optionName}} id={{optionId}} value={{optionValue}} />
+				&nbsp; &nbsp; 
+			{{/radioOptions}}
+		{{/formRadio}}
+		
+	</body>
+</html>
